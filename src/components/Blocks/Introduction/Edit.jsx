@@ -6,23 +6,15 @@ import config from '@plone/volto/registry';
 
 const IntroductionBlockEdit = (props) => {
   const { data, onChangeBlock, block, selected } = props;
+  const unwantedButtons = ['heading-two', 'heading-three', 'blockquote'];
 
   const filteredToolbarProps = {
     ...props,
     slateSettings: {
       ...config.settings.slate,
-      toolbarButtons: [
-        'bold',
-        'italic',
-        'strikethrough',
-        'link',
-        'separator',
-        'sub',
-        'sup',
-        'separator',
-        'numbered-list',
-        'bulleted-list',
-      ],
+      toolbarButtons: config.settings.slate.toolbarButtons.filter(
+        (button) => !(unwantedButtons || []).includes(button),
+      ),
     },
   };
 
