@@ -12,9 +12,14 @@ const IntroductionBlockEdit = (props) => {
     ...props,
     slateSettings: {
       ...config.settings.slate,
-      toolbarButtons: config.settings.slate.toolbarButtons.filter(
-        (button) => !unwantedButtons.includes(button),
-      ),
+      toolbarButtons: config.settings.slate.toolbarButtons
+        .filter((button) => !unwantedButtons.includes(button))
+        // eslint-disable-next-line array-callback-return
+        .filter((button, index, array) => {
+          if (button !== array[index + 1]) {
+            return button;
+          }
+        }),
     },
   };
 
