@@ -13,7 +13,7 @@ const IntroductionBlockEdit = (props) => {
     slateSettings: {
       ...config.settings.slate,
       toolbarButtons: config.settings.slate.toolbarButtons.filter(
-        (button) => !(unwantedButtons || []).includes(button),
+        (button) => !unwantedButtons.includes(button),
       ),
     },
   };
