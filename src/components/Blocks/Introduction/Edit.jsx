@@ -14,12 +14,8 @@ const IntroductionBlockEdit = (props) => {
       ...config.settings.slate,
       toolbarButtons: config.settings.slate.toolbarButtons
         .filter((button) => !unwantedButtons.includes(button))
-        // eslint-disable-next-line array-callback-return
-        .filter((button, index, array) => {
-          if (button !== array[index + 1]) {
-            return button;
-          }
-        }),
+        // remove any adjacent separators
+        .filter((button, index, array) => button !== array[index + 1]),
     },
   };
 
