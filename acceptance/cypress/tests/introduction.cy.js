@@ -15,15 +15,24 @@ context('Introduction Acceptance Tests', () => {
   it('As editor I can add an Introduction block', () => {
     // Given a Document with the title document
     cy.visit('/document/edit');
+
     // Create an Introduction block
-    cy.get('.block .slate-editor [contenteditable=true]').click();
+    cy.getSlate().click();
     cy.get('.button .block-add-button').click({ force: true });
-    cy.get('.ui.basic.icon.button.introduction').contains('Introduction').click({ force: true });
-    getSlateEditorAndType('.text-slate-editor-inner.detached-slate-editor .slate-editor [contenteditable=true]', 'This is an introduction');
+    cy.get('.ui.basic.icon.button.introduction')
+      .contains('Introduction')
+      .click({ force: true });
+    getSlateEditorAndType(
+      '.text-slate-editor-inner.detached-slate-editor .slate-editor [contenteditable=true]',
+      'This is an introduction',
+    );
     cy.get('#toolbar-save').click();
 
     // Check for Introduction block
     cy.visit('/document');
-    cy.get('.block.introduction').should('have.text', 'This is an introduction');
+    cy.get('.block.introduction').should(
+      'have.text',
+      'This is an introduction',
+    );
   });
 });
