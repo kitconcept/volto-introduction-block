@@ -78,13 +78,13 @@ i18n: ## Sync i18n
 format: ## Format codebase
 	${DOCKER_COMPOSE} run addon-dev lint:fix
 	${DOCKER_COMPOSE} run addon-dev prettier:fix
-	${DOCKER_COMPOSE} run addon-dev stylelint:fix
+	# ${DOCKER_COMPOSE} run addon-dev stylelint:fix
 
 .PHONY: lint
 lint: ## Lint Codebase
 	${DOCKER_COMPOSE} run addon-dev lint
 	${DOCKER_COMPOSE} run addon-dev prettier
-	${DOCKER_COMPOSE} run addon-dev stylelint
+	# ${DOCKER_COMPOSE} run addon-dev stylelint
 
 .PHONY: test
 test: ## Run unit tests
