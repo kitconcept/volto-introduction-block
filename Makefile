@@ -24,8 +24,8 @@ YELLOW=`tput setaf 3`
 PLONE_VERSION=6
 VOLTO_VERSION=16.10.0
 
-ADDON_NAME='@kitconcept/volto-blocks-grid'
-ADDON_PATH='volto-blocks-grid'
+ADDON_NAME='@kitconcept/volto-introduction-block'
+ADDON_PATH='volto-introduction-block'
 DEV_COMPOSE=dockerfiles/docker-compose.yml
 ACCEPTANCE_COMPOSE=acceptance/docker-compose.yml
 CMD=CURRENT_DIR=${CURRENT_DIR} ADDON_NAME=${ADDON_NAME} ADDON_PATH=${ADDON_PATH} VOLTO_VERSION=${VOLTO_VERSION} PLONE_VERSION=${PLONE_VERSION} docker compose
