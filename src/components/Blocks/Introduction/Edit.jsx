@@ -5,8 +5,8 @@ import { DetachedTextBlockEditor } from '@plone/volto-slate/blocks/Text/Detached
 import config from '@plone/volto/registry';
 
 const IntroductionBlockEdit = (props) => {
-  const { data, onChangeBlock, block, selected } = props;
-  const unwantedButtons = ['heading-two', 'heading-three', 'blockquote'];
+  const { blocksConfig, data, onChangeBlock, block, selected } = props;
+  const unwantedButtons = blocksConfig.introduction.unwantedButtons;
 
   const filteredToolbarProps = {
     ...props,
