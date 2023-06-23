@@ -11,6 +11,31 @@
 
 A standalone (detached slate) block that provides a text block meant to be used as introduction to a content page. This text usually having special formatting. It allows different paragraphs using breaklines (ENTER). It does not allow certain styling (as headings).
 
+
+## Block configuration
+
+### `unwantedButtons`
+
+It allows you to specify which buttons from the current slate block toolbar should be removed from the introduction block.
+
+
+```js
+  config.blocks.blocksConfig.introduction = {
+    id: 'introduction',
+    title: 'Introduction',
+    icon: textIntroductionSVG,
+    group: 'text',
+    view: IntroductionBlockView,
+    edit: IntroductionBlockEdit,
+    // This has a good reason: Slate does not work in detached mode if enabled
+    blockHasOwnFocusManagement: true,
+    restricted: false,
+    mostUsed: true,
+    sidebarTab: 1,
+    unwantedButtons: ['heading-three', 'blockquote'],
+  };
+```
+
 ## Install
 
 If you already have a Volto project, just update `package.json`:
