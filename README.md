@@ -21,17 +21,7 @@ It allows you to specify which buttons from the current slate block toolbar shou
 
 ```js
   config.blocks.blocksConfig.introduction = {
-    id: 'introduction',
-    title: 'Introduction',
-    icon: textIntroductionSVG,
-    group: 'text',
-    view: IntroductionBlockView,
-    edit: IntroductionBlockEdit,
-    // This has a good reason: Slate does not work in detached mode if enabled
-    blockHasOwnFocusManagement: true,
-    restricted: false,
-    mostUsed: true,
-    sidebarTab: 1,
+    ...config.blocks.blocksConfig.introduction,
     unwantedButtons: ['heading-three', 'blockquote'],
   };
 ```
