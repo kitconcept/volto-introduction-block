@@ -11,6 +11,25 @@
 
 A standalone (detached slate) block that provides a text block meant to be used as introduction to a content page. This text usually having special formatting. It allows different paragraphs using breaklines (ENTER). It does not allow certain styling (as headings).
 
+
+## Block configuration
+
+### `unwantedButtons`
+
+It allows you to specify which buttons from the current slate block toolbar should be removed from the introduction block.
+The default is to remove the buttons for any heading and the blockquote.
+
+You can configure them using this setting.
+This custom configuration will remove the `h3` and `blockquote`.:
+
+
+```js
+  config.blocks.blocksConfig.introduction = {
+    ...config.blocks.blocksConfig.introduction,
+    unwantedButtons: ['heading-three', 'blockquote'],
+  };
+```
+
 ## Install
 
 If you already have a Volto project, just update `package.json`:

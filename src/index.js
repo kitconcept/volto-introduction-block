@@ -16,6 +16,7 @@ const applyConfig = (config) => {
     restricted: false,
     mostUsed: true,
     sidebarTab: 1,
+    unwantedButtons: ['heading-two', 'heading-three', 'blockquote'],
   };
 
   // TODO: To remove when it's in core
