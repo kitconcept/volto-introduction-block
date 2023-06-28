@@ -1,8 +1,14 @@
 {
   "name": "@kitconcept/volto-introduction-block",
   "version": "1.0.0-alpha.1",
-  "description": "volto-introduction-block: Volto add-on",
+  "description": "Introduction block for Plone 6 (Volto). Provides a detached text (slate) block meant to be used as a highlighted paragraph.",
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kitconcept/volto-introduction-block.git"
+  },
+  "homepage": "https://github.com/kitconcept/volto-introduction-block#readme",
+  "author": "kitconcept, GmbH",
   "license": "MIT",
   "keywords": [
     "volto-addon",
