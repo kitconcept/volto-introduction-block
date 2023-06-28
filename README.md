@@ -17,6 +17,10 @@ A standalone (detached slate) block that provides a text block meant to be used 
 ### `unwantedButtons`
 
 It allows you to specify which buttons from the current slate block toolbar should be removed from the introduction block.
+The default is to remove the buttons for any heading and the blockquote.
+
+You can configure them using this setting.
+This custom configuration will remove the `h3` and `blockquote`.:
 
 
 ```js
