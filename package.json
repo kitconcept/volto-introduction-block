@@ -1,6 +1,6 @@
 {
   "name": "@kitconcept/volto-introduction-block",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "Introduction block for Plone 6 (Volto). Provides a detached text (slate) block meant to be used as a highlighted paragraph.",
   "main": "src/index.js",
   "repository": {
