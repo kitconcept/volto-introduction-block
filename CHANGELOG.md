@@ -8,6 +8,13 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0-alpha.1 (2023-06-28)
+
+### Feature
+
+- Add ability to configure the buttons in the block from the block config. @sneridagh [#3](https://github.com/kitconcept/volto-introduction-block/pull/3)
+
+
 ## 1.0.0-alpha.0 (2023-06-14)
 
 ### Feature
