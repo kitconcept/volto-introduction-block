@@ -8,6 +8,7 @@ context('Introduction Acceptance Tests', () => {
       contentType: 'Document',
       contentId: 'document',
       contentTitle: 'Document',
+      path: '/',
     });
     cy.autologin();
   });
