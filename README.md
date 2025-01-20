@@ -8,7 +8,7 @@ A introduction block for volto
 [![Unit tests](https://github.com/kitconcept/volto-introduction-block/actions/workflows/unit.yml/badge.svg)](https://github.com/kitconcept/volto-introduction-block/actions/workflows/unit.yml)
 
 
-![kitconcept GmbH](https://raw.githubusercontent.com/kitconcept/volto-form-builder/master/kitconcept.png)
+![kitconcept GmbH](https://raw.githubusercontent.com/kitconcept/volto-form-builder/main/kitconcept.png)
 
 
 ## Introduction
