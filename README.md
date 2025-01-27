@@ -7,9 +7,8 @@ A introduction block for volto
 [![Code analysis checks](https://github.com/kitconcept/volto-introduction-block/actions/workflows/code.yml/badge.svg)](https://github.com/kitconcept/volto-introduction-block/actions/workflows/code.yml)
 [![Unit tests](https://github.com/kitconcept/volto-introduction-block/actions/workflows/unit.yml/badge.svg)](https://github.com/kitconcept/volto-introduction-block/actions/workflows/unit.yml)
 
-
-![kitconcept GmbH](https://raw.githubusercontent.com/kitconcept/volto-form-builder/main/kitconcept.png)
-
+<img align="center" width="300" alt="kitconcept, GmbH" src="https://kitconcept.com/kitconcept-black.svg#gh-light-mode-only" />
+<img align="center" width="300" alt="kitconcept, GmbH" src="https://kitconcept.com/kitconcept-white.svg#gh-dark-mode-only" />
 
 ## Introduction
 
