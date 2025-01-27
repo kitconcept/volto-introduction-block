@@ -7,6 +7,29 @@ A standalone (detached slate) block that provides a text block meant to be used 
 [![Code analysis checks](https://github.com/kitconcept/volto-introduction-block/actions/workflows/code.yml/badge.svg)](https://github.com/kitconcept/volto-introduction-block/actions/workflows/code.yml)
 [![Unit tests](https://github.com/kitconcept/volto-introduction-block/actions/workflows/unit.yml/badge.svg)](https://github.com/kitconcept/volto-introduction-block/actions/workflows/unit.yml)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://kitconcept.com/kitconcept-white.svg">
+  <img width="300" alt="kitconcept, GmbH" src="https://kitconcept.com/kitconcept-black.svg">
+</picture>
+
+## Features
+
+<!-- List your awesome features here -->
+
+## Installation
+
+To install your project, you must choose the method appropriate to your version of Volto.
+
+## Block configuration
+
+Create a new Volto project (you can skip this step if you already have one):
+
+```
+npm install -g yo @plone/generator-volto
+yo @plone/volto my-volto-project --addon @kitconcept/volto-introduction-block
+cd my-volto-project
+```
+
 ## Features
 
 <!-- List your awesome features here -->
@@ -200,4 +223,4 @@ The project is licensed under the MIT license.
 
 ## Credits and Acknowledgements 🙏
 
-Crafted with care by **Generated using [Cookieplone (0.7.1)](https://github.com/plone/cookieplone) and [cookiecutter-plone (e664f3e)](https://github.com/plone/cookiecutter-plone/commit/e664f3e236224bb21452de0965602aa1de58bd13) on 2024-11-05 11:19:07.696530**. A special thanks to all contributors and supporters!
+Crafted with care by **Generated using [Cookieplone (0.8.2)](https://github.com/plone/cookieplone) and [cookiecutter-plone (d9b5293)](https://github.com/plone/cookiecutter-plone/commit/d9b52933cbc6efd137e93e35a270214e307359f0) on 2025-01-17 16:02:46.759351**. A special thanks to all contributors and supporters!
