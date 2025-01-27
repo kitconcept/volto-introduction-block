@@ -1,6 +1,6 @@
 # Volto Introduction Block (@kitconcept/volto-introduction-block)
 
-A introduction block for volto
+A standalone (detached slate) block that provides a text block meant to be used as introduction to a content page.
 
 [![npm](https://img.shields.io/npm/v/@kitconcept/volto-introduction-block)](https://www.npmjs.com/package/@kitconcept/volto-introduction-block)
 [![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://kitconcept.github.io/volto-introduction-block/)
@@ -12,26 +12,22 @@ A introduction block for volto
   <img width="300" alt="kitconcept, GmbH" src="https://kitconcept.com/kitconcept-black.svg">
 </picture>
 
-## Introduction
+## Features
 
-A standalone (detached slate) block that provides a text block meant to be used as introduction to a content page. This text usually having special formatting. It allows different paragraphs using breaklines (ENTER). It does not allow certain styling (as headings).
+<!-- List your awesome features here -->
+
+## Installation
+
+To install your project, you must choose the method appropriate to your version of Volto.
 
 ## Block configuration
 
-### `unwantedButtons`
+Create a new Volto project (you can skip this step if you already have one):
 
-It allows you to specify which buttons from the current slate block toolbar should be removed from the introduction block.
-The default is to remove the buttons for any heading and the blockquote.
-
-You can configure them using this setting.
-This custom configuration will remove the `h3` and `blockquote`.:
-
-
-```js
-  config.blocks.blocksConfig.introduction = {
-    ...config.blocks.blocksConfig.introduction,
-    unwantedButtons: ['heading-three', 'blockquote'],
-  };
+```
+npm install -g yo @plone/generator-volto
+yo @plone/volto my-volto-project --addon @kitconcept/volto-introduction-block
+cd my-volto-project
 ```
 
 ## Features

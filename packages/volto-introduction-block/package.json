@@ -1,7 +1,7 @@
 {
   "name": "@kitconcept/volto-introduction-block",
   "version": "1.0.0",
-  "description": "A introduction block for volto",
+  "description": "A standalone (detached slate) block that provides a text block meant to be used as introduction to a content page.",
   "main": "src/index.js",
   "license": "MIT",
   "keywords": [

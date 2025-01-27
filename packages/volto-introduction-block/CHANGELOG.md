@@ -10,7 +10,7 @@
 
 ## 1.0.0 (2023-06-28)
 
-
+- Re-release 1.0.0-alpha.1 as 1.0.0. @sneridagh
 
 
 ## 1.0.0-alpha.1 (2023-06-28)
@@ -26,14 +26,3 @@
 
 - Disable the heading and blockquote buttons in the Slate editor toolbar for the introduction block. @danlavrz [#1](https://github.com/kitconcept/volto-introduction-block/pull/1)
 - Add new tests model based in docker @sneridagh [#2](https://github.com/kitconcept/volto-introduction-block/pull/2)
-
-
-## 1.0.0 (unreleased)
-
-### Breaking
-
-### Feature
-
-### Bugfix
-
-### Internal
