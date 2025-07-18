@@ -1,6 +1,6 @@
 import cx from 'classnames';
 import { TextBlockView } from '@plone/volto-slate/blocks/Text';
-import { MaybeWrap } from '@plone/volto/components';
+import MaybeWrap from '@plone/volto/components/manage/MaybeWrap/MaybeWrap';
 
 const LegacyWrapper = (props) => (
   <div
