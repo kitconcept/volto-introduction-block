@@ -1,7 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import SidebarPortal from '@plone/volto/components/manage/Sidebar/SidebarPortal';
 import Sidebar from './Sidebar';
 import { DetachedTextBlockEditor } from '@plone/volto-slate/blocks/Text/DetachedTextBlockEditor';
+import saveSlateBlockSelection from '@plone/volto-slate/actions/selection';
 import config from '@plone/volto/registry';
 
 const IntroductionBlockEdit = (props) => {
@@ -34,4 +36,6 @@ const IntroductionBlockEdit = (props) => {
   );
 };
 
-export default IntroductionBlockEdit;
+export default connect(null, {
+  saveSlateBlockSelection, // needed as editor blockProps
+})(IntroductionBlockEdit);
