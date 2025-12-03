@@ -11,8 +11,6 @@ const applyConfig = (config) => {
     group: 'text',
     view: IntroductionBlockView,
     edit: IntroductionBlockEdit,
-    // This has a good reason: Slate does not work in detached mode if enabled
-    blockHasOwnFocusManagement: true,
     restricted: false,
     mostUsed: true,
     sidebarTab: 1,
