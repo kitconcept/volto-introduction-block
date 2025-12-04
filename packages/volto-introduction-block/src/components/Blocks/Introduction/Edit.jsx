@@ -37,5 +37,7 @@ const IntroductionBlockEdit = (props) => {
 };
 
 export default connect(null, {
+  // This is required by DetachedTextBlockEditor to work properly
+  // without the `detached` prop.
   saveSlateBlockSelection,
 })(IntroductionBlockEdit);
