@@ -8,6 +8,16 @@
 
 <!-- towncrier release notes start -->
 
+## 1.2.0 (2025-12-08)
+
+### Feature
+
+- Add Spanish translation #8 @macagua [#8](https://github.com/kitconcept/volto-introduction-block/issue/8)
+
+### Bugfix
+
+- Fix error on pressing enter button @iRohitSingh 
+
 ## 1.1.0 (2025-07-23)
 
 ### Feature
