@@ -36,3 +36,18 @@ export function backspaceInList({ editor, event }) {
     return true;
   }
 }
+
+/* ### ENTER HANDLER ### */
+
+export function enterCreatesIntroductionBlock({ editor, event }) {
+  event.preventDefault();
+  const props = editor.getBlockProps();
+  if (props?.onAddBlock && props?.onSelectBlock) {
+    const { onAddBlock, onSelectBlock, index } = props;
+    // Create a new introduction block after the current one
+    const newBlockId = onAddBlock('introduction', index + 1);
+    onSelectBlock(newBlockId);
+    return true;
+  }
+  return true;
+}
