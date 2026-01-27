@@ -1,7 +1,10 @@
 import textIntroductionSVG from '@plone/volto/icons/subtext.svg';
 import IntroductionBlockView from './components/Blocks/Introduction/View';
 import IntroductionBlockEdit from './components/Blocks/Introduction/Edit';
-import { backspaceInList } from './components/Blocks/Introduction/keyboard';
+import {
+  backspaceInList,
+  enterCreatesIntroductionBlock,
+} from './components/Blocks/Introduction/keyboard';
 
 const applyConfig = (config) => {
   config.blocks.blocksConfig.introduction = {
@@ -22,6 +25,9 @@ const applyConfig = (config) => {
   // TODO: To remove when it's in core
   config.settings.slate.textblockDetachedKeyboardHandlers = {
     ...config.settings.slate.textblockDetachedKeyboardHandlers,
+
+    Enter: [enterCreatesIntroductionBlock],
+
     Backspace: [
       backspaceInList, // Backspace in list item lifts node and breaks Volto blocks
     ],
