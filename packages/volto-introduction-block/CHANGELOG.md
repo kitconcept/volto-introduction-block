@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 1.3.0 (2026-01-30)
+
+### Feature
+
+- Create Introduction block on pressing Enter instead of default text block @iRohitSingh [#11](https://github.com/kitconcept/volto-introduction-block/issue/11)
+
 ## 1.2.0 (2025-12-08)
 
 ### Feature
