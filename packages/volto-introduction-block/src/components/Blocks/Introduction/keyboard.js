@@ -1,5 +1,6 @@
 import { Transforms } from 'slate';
 import config from '@plone/volto/registry';
+import { insertBlock } from '@plone/volto/helpers/Blocks/Blocks.js';
 import {
   isCursorInList,
   isCursorAtListBlockStart,
@@ -35,4 +36,28 @@ export function backspaceInList({ editor, event }) {
 
     return true;
   }
+}
+
+/* ### ENTER HANDLER ### */
+
+export function enterCreatesIntroductionBlock({ editor, event }) {
+  event.preventDefault();
+  const props = editor.getBlockProps();
+  const { onChangeFormData, onSelectBlock, block, blocksConfig, intl } = props;
+  const { properties } = props;
+  if (properties && properties['blocks_layout']) {
+    const [newBlockId, newFormData] = insertBlock(
+      properties,
+      block,
+      { '@type': 'introduction' },
+      {},
+      1, // add the introduction block after the current block
+      blocksConfig,
+      intl,
+    );
+    onChangeFormData(newFormData);
+    onSelectBlock(newBlockId);
+    return true;
+  }
+  return true;
 }
