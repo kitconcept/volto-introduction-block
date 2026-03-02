@@ -8,6 +8,16 @@
 
 <!-- towncrier release notes start -->
 
+## 1.4.0 (2026-03-02)
+
+### Feature
+
+- Added pt-br translations. @humanaice [#13](https://github.com/kitconcept/volto-introduction-block/issue/13)
+
+### Internal
+
+- Updated README + added Screenshot (gif) and Screencast. @humanaice [#16](https://github.com/kitconcept/volto-introduction-block/issue/16)
+
 ## 1.3.0 (2026-01-30)
 
 ### Feature
