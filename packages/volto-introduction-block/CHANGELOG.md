@@ -8,6 +8,16 @@
 
 <!-- towncrier release notes start -->
 
+## 1.4.1 (2026-03-05)
+
+### Bugfix
+
+- Fix undefined error when pressing enter in widget in sidebar. @iFlameing 
+
+### Internal
+
+- Add cypress test for pressing Enter feature @iRohitSingh [#12](https://github.com/kitconcept/volto-introduction-block/issue/12)
+
 ## 1.4.0 (2026-03-02)
 
 ### Feature
