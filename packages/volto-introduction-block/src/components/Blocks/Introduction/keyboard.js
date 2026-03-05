@@ -41,10 +41,25 @@ export function backspaceInList({ editor, event }) {
 /* ### ENTER HANDLER ### */
 
 export function enterCreatesIntroductionBlock({ editor, event }) {
-  event.preventDefault();
+  if (editor.getBlockProps === undefined) {
+    return false;
+  }
   const props = editor.getBlockProps();
-  const { onChangeFormData, onSelectBlock, block, blocksConfig, intl } = props;
-  const { properties } = props;
+  const {
+    onChangeFormData,
+    onSelectBlock,
+    block,
+    blocksConfig,
+    intl,
+    properties,
+  } = props;
+
+  if (properties?.blocks?.[block]?.['@type'] !== 'introduction') {
+    return false;
+  }
+
+  event.preventDefault();
+
   if (properties && properties['blocks_layout']) {
     const [newBlockId, newFormData] = insertBlock(
       properties,

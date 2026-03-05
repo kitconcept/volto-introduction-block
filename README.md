@@ -12,27 +12,19 @@ A standalone (detached slate) block that provides a text block meant to be used 
   <img width="300" alt="kitconcept, GmbH" src="https://kitconcept.com/kitconcept-black.svg">
 </picture>
 
-## Features
+## Screenshot
 
-<!-- List your awesome features here -->
+<img alt="Volto Introduction Block" src="https://github.com/user-attachments/assets/5be1a11a-afe1-44c9-9882-3510c4d3bfdf">
 
-## Installation
+## Screencast
 
-To install your project, you must choose the method appropriate to your version of Volto.
-
-## Block configuration
-
-Create a new Volto project (you can skip this step if you already have one):
-
-```
-npm install -g yo @plone/generator-volto
-yo @plone/volto my-volto-project --addon @kitconcept/volto-introduction-block
-cd my-volto-project
-```
+https://github.com/user-attachments/assets/0705000b-6fcb-47f1-8862-c6197a048b83
 
 ## Features
 
-<!-- List your awesome features here -->
+- **Introduction block** — Registers a standalone (detached Slate) `introduction` block that provides a styled text block meant to be used as an introduction to a content page.
+- **Inline editing** — Text is editable inline using the Slate rich-text editor, just like Volto's standard text block.
+- **Detached block** — Renders outside the normal block flow, making it suitable for page introductions without affecting the surrounding layout.
 
 ## Installation
 
