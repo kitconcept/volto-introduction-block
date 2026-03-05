@@ -36,4 +36,17 @@ context('Introduction Acceptance Tests', () => {
       'This is an introduction',
     );
   });
+  it('Pressing Enter on a focused Introduction Block opens new Introduction Block', () => {
+    // Given a Document with the title document
+    cy.visit('/document/edit');
+
+    // Create an Introduction block
+    cy.getSlate().click();
+    cy.get('.button .block-add-button').click({ force: true });
+    cy.get('.ui.basic.icon.button.introduction')
+      .contains('Introduction')
+      .click();
+    cy.focused().type('{enter}');
+    cy.get('.block.introduction .slate-editor').should('have.length', 2);
+  });
 });
