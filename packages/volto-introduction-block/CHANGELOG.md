@@ -8,6 +8,16 @@
 
 <!-- towncrier release notes start -->
 
+## 1.4.2 (2026-10-13)
+
+### Bugfix
+
+- Add missing German translation for the Introduction block title in the block chooser and slash menu. @iFlameing 
+
+### Internal
+
+- Update to latest Volto. @sneridagh 
+
 ## 1.4.1 (2026-03-05)
 
 ### Bugfix
