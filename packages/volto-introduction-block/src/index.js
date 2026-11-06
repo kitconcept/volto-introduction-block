@@ -5,6 +5,8 @@ import {
   backspaceInList,
   enterCreatesIntroductionBlock,
 } from './components/Blocks/Introduction/keyboard';
+import { IntroductionBlockSchema } from './components/Blocks/Introduction/schema';
+import { IntroductionBlockDataAdapter } from './components/Blocks/Introduction/adapter';
 
 const applyConfig = (config) => {
   config.blocks.blocksConfig.introduction = {
@@ -14,6 +16,8 @@ const applyConfig = (config) => {
     group: 'text',
     view: IntroductionBlockView,
     edit: IntroductionBlockEdit,
+    blockSchema: IntroductionBlockSchema,
+    dataAdapter: IntroductionBlockDataAdapter,
     // This has a good reason: Slate does not work in detached mode if enabled
     blockHasOwnFocusManagement: true,
     restricted: false,

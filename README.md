@@ -87,6 +87,12 @@ If this package provides a Volto theme, and you want to activate it, then add th
 const theme = '@kitconcept/volto-introduction-block';
 ```
 
+### `@blocks-schema` support
+
+The block schema and the block documentation are published by the `@blocks-schema` endpoint of the Volto server, which is available with Volto 19.6 or later.
+With Volto 19.6 or later, the endpoint describes the Introduction block.
+The add-on keeps working on older Volto 19 releases, without this endpoint.
+
 ## Test installation
 
 Visit http://localhost:3000/ in a browser, login, and check the awesome new features.
