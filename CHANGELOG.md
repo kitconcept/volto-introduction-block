@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 1.5.0 (2026-11-06)
+
+### Feature
+
+- Added support for the `@blocks-schema` endpoint of Volto 19.6 to the Introduction block: the endpoint now publishes its schema and documentation, and the settings form saves changes through a data adapter. @ericof [#20](https://github.com/kitconcept/volto-introduction-block/issue/20)
+
 ## 1.4.2 (2026-10-13)
 
 ### Bugfix
