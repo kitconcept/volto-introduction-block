@@ -1,0 +1,1 @@
+Added support for the `@blocks-schema` endpoint of Volto 19.6 to the Introduction block: the endpoint now publishes its schema and documentation, and the settings form saves changes through a data adapter. @ericof
